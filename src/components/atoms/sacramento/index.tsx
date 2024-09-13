@@ -1,13 +1,13 @@
 'use client'
-import { Onest } from 'next/font/google'
+import { Sacramento } from 'next/font/google'
 import { forwardRef, useEffect, useRef } from 'react'
 
-export const onest = Onest({
+export const sacramento = Sacramento({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
+  weight: ['400'],
 })
 
-export interface OnestTextProps {
+export interface SacramentoTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
@@ -16,9 +16,9 @@ export interface OnestTextProps {
   className?: string
 }
 
-export const OnestText = forwardRef<
+export const SacramentoText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
-  OnestTextProps
+  SacramentoTextProps
 >(
   (
     {
@@ -41,7 +41,7 @@ export const OnestText = forwardRef<
     function getSize() {
       switch (fontSize) {
         case '16px':
-          return 'text-[16px]'
+          return 'text-[23px]'
       }
     }
 
@@ -75,7 +75,7 @@ export const OnestText = forwardRef<
       }
     }
 
-    let globalStyle = `${onest.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    let globalStyle = `${sacramento.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {
@@ -128,4 +128,4 @@ export const OnestText = forwardRef<
   },
 )
 
-OnestText.displayName = 'OnestText'
+SacramentoText.displayName = 'SacramentoText'
