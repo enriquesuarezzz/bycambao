@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-center gap-5 pt-5 md:mx-5 md:justify-between md:pt-10 lg:mx-16">
+    <nav className="fixed top-0 flex w-full items-center justify-center gap-5 pt-5 md:justify-between md:px-5 md:pt-10 lg:px-16">
       <Image
         src={'/images/logo.avif'}
         alt="byCambao logo"
