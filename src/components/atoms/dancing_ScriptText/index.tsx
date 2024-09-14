@@ -1,31 +1,31 @@
 'use client'
-import { Sacramento } from 'next/font/google'
+import { Dancing_Script } from 'next/font/google'
 import { forwardRef, useEffect, useRef } from 'react'
 
-export const sacramento = Sacramento({
+export const dancing_Script = Dancing_Script({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '600', '700'],
 })
 
-export interface SacramentoTextProps {
+export interface Dancing_ScriptTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '23px'
+  fontSize?: '20px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
 
-export const SacramentoText = forwardRef<
+export const Dancing_ScriptText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
-  SacramentoTextProps
+  Dancing_ScriptTextProps
 >(
   (
     {
       text,
       tag = 'p',
       style = 'regular',
-      fontSize = '23px',
+      fontSize = '16px',
       className = 'text-black',
       leading = 'normal',
     },
@@ -40,8 +40,8 @@ export const SacramentoText = forwardRef<
 
     function getSize() {
       switch (fontSize) {
-        case '23px':
-          return 'text-[23px]'
+        case '24px':
+          return 'text-[14px] md:text-[16px] lg:text-[20px]'
       }
     }
 
@@ -75,7 +75,7 @@ export const SacramentoText = forwardRef<
       }
     }
 
-    let globalStyle = `${sacramento.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    let globalStyle = `${dancing_Script.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {
@@ -128,4 +128,4 @@ export const SacramentoText = forwardRef<
   },
 )
 
-SacramentoText.displayName = 'SacramentoText'
+Dancing_ScriptText.displayName = 'Dancing_ScriptText'
