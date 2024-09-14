@@ -11,7 +11,7 @@ export interface SacramentoTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '16px'
+  fontSize?: '23px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
@@ -25,7 +25,7 @@ export const SacramentoText = forwardRef<
       text,
       tag = 'p',
       style = 'regular',
-      fontSize = '16px',
+      fontSize = '23px',
       className = 'text-black',
       leading = 'normal',
     },
@@ -40,7 +40,7 @@ export const SacramentoText = forwardRef<
 
     function getSize() {
       switch (fontSize) {
-        case '16px':
+        case '23px':
           return 'text-[23px]'
       }
     }
