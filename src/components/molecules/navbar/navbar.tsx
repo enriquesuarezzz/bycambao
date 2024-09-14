@@ -48,7 +48,7 @@ export default function Navbar() {
           text='"Una razón para volver"'
           tag="h1"
           style="bold"
-          fontSize="16px"
+          fontSize="23px"
           className=""
         />
       </div>
