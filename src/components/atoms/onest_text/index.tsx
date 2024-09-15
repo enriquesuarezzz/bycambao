@@ -11,7 +11,7 @@ export interface OnestTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '16px'
+  fontSize?: '13px' | '16px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
@@ -40,6 +40,8 @@ export const OnestText = forwardRef<
 
     function getSize() {
       switch (fontSize) {
+        case '13px':
+          return 'text-[11px] md:text-[13px]'
         case '16px':
           return 'text-[16px]'
       }
