@@ -4,15 +4,17 @@ import Image from 'next/image'
 export default function Header() {
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10 px-10 md:gap-20 lg:flex-row lg:gap-0">
+      {/* header image */}
       <div className="max-h-[480px] w-full max-w-[640px]">
         <Image
           src={'/images/header.avif'}
-          alt="byCambao logo"
+          alt="bycambao party image"
           width={500}
           height={500}
           className="ml-2 h-full w-full"
         />
       </div>
+      {/* header description */}
       <div className="max-w-[700px] text-center">
         <Dancing_ScriptText
           text="Lanzarote alberga de los lugares más bonitos del planeta, y pecamos de dar todo a los turistas, conejeros, estamos aquí para hacerles disfrutar de la fiesta canaria con la cultura inquieta de los jóvenes."
