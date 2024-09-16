@@ -19,7 +19,7 @@ export default function Footer() {
   ]
   return (
     //footer component
-    <footer className="fixed bottom-0 flex w-full pb-6 pl-4 pr-4 md:pl-10 md:pr-20">
+    <footer className="bottom-0 flex w-full pb-6 pl-4 pr-4 pt-20 md:pl-10 md:pr-20">
       <div className="flex w-full flex-col">
         <div className="flex w-full flex-col items-end justify-between pb-2 md:flex-row">
           {/* mobile links (hidden on desktop) */}

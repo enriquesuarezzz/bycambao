@@ -11,7 +11,7 @@ export interface Dancing_ScriptTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '20px'
+  fontSize?: '20px' | '30px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
@@ -40,8 +40,10 @@ export const Dancing_ScriptText = forwardRef<
 
     function getSize() {
       switch (fontSize) {
-        case '24px':
-          return 'text-[14px] md:text-[16px] lg:text-[20px]'
+        case '20px':
+          return 'text-[20px]'
+        case '30px':
+          return 'text-[30px]'
       }
     }
 
