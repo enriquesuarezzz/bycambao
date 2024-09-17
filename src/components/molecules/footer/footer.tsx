@@ -27,7 +27,7 @@ export default function Footer() {
             {/* logo */}
             <div className="flex items-center justify-center pb-10 md:pb-14">
               <Image
-                src={'/images/logo.avif'}
+                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH} + images/logo.avif`}
                 alt="byCambao logo"
                 width={100}
                 height={100}

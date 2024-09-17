@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 flex w-full items-center justify-center gap-5 pt-5 md:justify-between md:px-5 md:pt-10 lg:px-16">
       <Image
-        src={'/images/logo.avif'}
+        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}/images/logo.avif`}
         alt="byCambao logo"
         width={100}
         height={100}
@@ -26,7 +26,7 @@ export default function Navbar() {
         </Link>
         <Link href={'/'}>
           <OnestText
-            text="Contacto"
+            text="Equipo"
             tag="h1"
             style="bold"
             fontSize="16px"
@@ -35,7 +35,7 @@ export default function Navbar() {
         </Link>
         <Link href={'/'}>
           <OnestText
-            text="Equipo"
+            text="Contacto"
             tag="h1"
             style="bold"
             fontSize="16px"
