@@ -59,7 +59,7 @@ export default function FirstByCambao() {
           <SwiperSlide key={index} className="max-w-[450px]">
             <div className="flex flex-col items-center justify-center">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + image.url}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}${image.url}`}
                 width={500}
                 height={600}
                 alt="First byCambao Party Image"
@@ -82,7 +82,7 @@ export default function FirstByCambao() {
           <SwiperSlide key={index} className="max-w-[450px]">
             <div className="flex flex-col items-center justify-center">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + image.url}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}${image.url}`}
                 width={500}
                 height={600}
                 alt="First byCambao Party Image"

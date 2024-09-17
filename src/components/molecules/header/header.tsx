@@ -7,7 +7,7 @@ export default function Header() {
       {/* header image */}
       <div className="max-h-[480px] w-full max-w-[640px]">
         <Image
-          src={'/images/header.avif'}
+          src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/header.avif`}
           alt="bycambao party image"
           width={500}
           height={500}

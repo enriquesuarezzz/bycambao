@@ -30,7 +30,7 @@ export default function Features() {
           className="relative flex h-full max-h-[600px] max-w-[550px] flex-col items-center justify-center rounded-3xl border border-orange bg-transparent"
         >
           <Image
-            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + image}`}
+            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}${image}`}
             width={500}
             height={300}
             alt="Project"
