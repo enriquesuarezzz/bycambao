@@ -20,17 +20,14 @@ export const Dancing_ScriptText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
   Dancing_ScriptTextProps
 >(
-  (
-    {
-      text,
-      tag = 'p',
-      style = 'regular',
-      fontSize = '16px',
-      className = 'text-black',
-      leading = 'normal',
-    },
-    ref,
-  ) => {
+  ({
+    text,
+    tag = 'p',
+    style = 'regular',
+    fontSize = '16px',
+    className = 'text-black',
+    leading = 'normal',
+  }) => {
     const textContent = useRef<HTMLParagraphElement>(null)
     useEffect(() => {
       if (textContent.current) {
@@ -77,7 +74,7 @@ export const Dancing_ScriptText = forwardRef<
       }
     }
 
-    let globalStyle = `${dancing_Script.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    const globalStyle = `${dancing_Script.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {

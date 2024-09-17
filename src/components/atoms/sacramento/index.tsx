@@ -20,17 +20,14 @@ export const SacramentoText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
   SacramentoTextProps
 >(
-  (
-    {
-      text,
-      tag = 'p',
-      style = 'regular',
-      fontSize = '23px',
-      className = 'text-black',
-      leading = 'normal',
-    },
-    ref,
-  ) => {
+  ({
+    text,
+    tag = 'p',
+    style = 'regular',
+    fontSize = '23px',
+    className = 'text-black',
+    leading = 'normal',
+  }) => {
     const textContent = useRef<HTMLParagraphElement>(null)
     useEffect(() => {
       if (textContent.current) {
@@ -75,7 +72,7 @@ export const SacramentoText = forwardRef<
       }
     }
 
-    let globalStyle = `${sacramento.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    const globalStyle = `${sacramento.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {

@@ -1,10 +1,6 @@
 import { IconProps } from '@/interfaces/icon'
 
-export const IInstagram: React.FC<IconProps> = ({
-  color,
-  size = 13,
-  ...attributes
-}) => {
+export const IInstagram: React.FC<IconProps> = ({ ...attributes }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
