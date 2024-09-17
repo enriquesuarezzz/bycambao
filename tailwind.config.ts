@@ -14,7 +14,7 @@ const config: Config = {
         orange: '#bb5129',
       },
       maxWidth: {
-        '8xl': '1400px',
+        '8xl': '1850px',
       },
     },
   },
