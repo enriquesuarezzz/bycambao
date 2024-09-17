@@ -4,33 +4,33 @@ import Image from 'next/image'
 export default function Features() {
   const features = [
     {
-      image: '/images/feature1.avif',
+      image: 'images/feature1.avif',
       title: '<span class="text-orange">Reencuentros</span>',
       description:
         'En las fiestas de cambao los reencuentros son el corazón de los eventos',
     },
     {
-      image: '/images/feature2.avif',
+      image: 'images/feature2.avif',
       title: '<span class="text-orange">Algo distinto</span>',
       description:
         'La Isla de Lanzarote es distinta, vamos a darle algo distinto a nuestra gente',
     },
     {
-      image: '/images/feature3.avif',
+      image: 'images/feature3.avif',
       title: '<span class="text-orange">Una razón para volver</span>',
       description:
         'Sin duda, en nuestros eventos siempre tendrás  <i>~una razón para volver a la isla~</i> ',
     },
   ]
   return (
-    <div className="flex grid-cols-1 flex-col items-center justify-center gap-10 px-10 pt-14 md:grid md:pt-32 lg:grid-cols-3 lg:gap-10">
+    <div className="flex grid-cols-1 flex-col items-center justify-center gap-10 pt-14 md:pt-32 lg:grid lg:grid-cols-3 lg:gap-10">
       {features.map(({ image, title, description }) => (
         <div
           key={title}
           className="relative flex h-full max-h-[600px] max-w-[550px] flex-col items-center justify-center rounded-3xl border border-orange bg-transparent"
         >
           <Image
-            src={`http://localhost:3000` + image}
+            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + image}`}
             width={500}
             height={300}
             alt="Project"
@@ -39,7 +39,7 @@ export default function Features() {
           <div className="px-4 py-4 md:px-6">
             <Dancing_ScriptText
               text={title}
-              fontSize="30px"
+              fontSize="46px"
               className="pt-1 text-center md:pt-4"
             />
             <OnestText
