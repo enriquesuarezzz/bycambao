@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.enriquesuarez.dev',
+        hostname: 'www.bycambao.vercel.app/',
       },
     ],
   },
