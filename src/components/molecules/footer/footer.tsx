@@ -19,13 +19,13 @@ export default function Footer() {
   ]
   return (
     //footer component
-    <footer className="bottom-0 flex w-full pb-6 pl-4 pr-4 pt-20 md:pl-10 md:pr-20">
+    <footer className="bottom-0 flex w-full pb-6 pl-4 pr-4 pt-10 md:pl-10 md:pr-20 md:pt-20">
       <div className="flex w-full flex-col">
         <div className="flex w-full flex-col items-end justify-between pb-2 md:flex-row">
           {/* mobile links (hidden on desktop) */}
           <div className="flex w-full flex-col items-center justify-center md:hidden">
             {/* logo */}
-            <div className="flex items-center justify-center pb-10 md:pb-14">
+            <div className="flex items-center justify-center pb-6 md:pb-14">
               <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/logo.avif`}
                 alt="byCambao logo"
@@ -58,21 +58,21 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="transform transition-transform duration-300 hover:scale-110"
               >
-                <IInstagram />
+                <IInstagram className="size-5" />
               </Link>
               {/* Phone */}
               <Link
                 href="tel:+34611345567"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="611 34 55 67" fontSize="16px" />
+                <OnestText text="611 34 55 67" fontSize="14px" />
               </Link>
               {/* Mail */}
               <Link
                 href="mailto:bycambao@gmail.com"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="bycambao@gmail.com" fontSize="16px" />
+                <OnestText text="bycambao@gmail.com" fontSize="14px" />
               </Link>
             </div>
             <div className="flex flex-col">
@@ -110,14 +110,14 @@ export default function Footer() {
                 href="/cookies"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="Cookies" fontSize="16px" />
+                <OnestText text="Cookies" fontSize="14px" />
               </Link>
               {/* legal advise */}
               <Link
                 href="/aviso-legal"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="Aviso Legal" fontSize="16px" />
+                <OnestText text="Aviso Legal" fontSize="14px" />
               </Link>
             </div>
           </div>
