@@ -1,4 +1,5 @@
 import { ChangeEvent, ForwardedRef, forwardRef } from 'react'
+import { UseFormRegisterReturn } from 'react-hook-form'
 
 interface InputProps {
   id?: string
@@ -9,7 +10,7 @@ interface InputProps {
   textArea?: boolean // Flag to determine if textarea should be rendered
   onChange?: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void // onChange event handler
   className?: string
-  register?: any
+  register?: UseFormRegisterReturn // if it doesnt work use any type
 }
 
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(

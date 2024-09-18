@@ -1,9 +1,7 @@
 import { Dancing_ScriptText } from '@/components/atoms/dancing_ScriptText'
-import { OnestText } from '@/components/atoms/onest_text'
 import ContactForm from '@/components/molecules/contact_form/contact_form'
 import { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'byCambao | Contacto',
