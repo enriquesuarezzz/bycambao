@@ -11,6 +11,7 @@ export default function Header() {
           alt="bycambao party image"
           width={500}
           height={500}
+          unoptimized
           className="ml-2 h-full w-full"
         />
       </div>

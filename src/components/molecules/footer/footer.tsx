@@ -31,6 +31,7 @@ export default function Footer() {
                 alt="byCambao logo"
                 width={100}
                 height={100}
+                unoptimized
                 className="h-[50px] w-[60px] md:h-[60px] md:w-[90px]"
               />
             </div>
@@ -85,6 +86,7 @@ export default function Footer() {
                     alt="byCambao logo"
                     width={100}
                     height={100}
+                    unoptimized
                     className="h-[50px] w-[60px] md:h-[60px] md:w-[90px]"
                   />
                 </div>
