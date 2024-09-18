@@ -33,7 +33,8 @@ export default function Features() {
             src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}${image}`}
             width={500}
             height={300}
-            alt="Project"
+            alt="People enjoying bycambao party"
+            unoptimized
             className="h-auto w-full rounded-2xl object-cover px-8 pt-6 md:px-10 md:pt-8"
           />
           <div className="px-4 py-4 md:px-6">
