@@ -1,4 +1,4 @@
-# Next.js byCambao Landing Page Website
+# byCambao Landing Page Website
 
 Website of a party event landing page using React, NextJS, TailwindCSS and Typescript.
 
