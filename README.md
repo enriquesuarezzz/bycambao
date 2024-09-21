@@ -1,6 +1,6 @@
 # byCambao Landing Page Website
 
-Website of a party event landing page using React, NextJS, TailwindCSS and Typescript.
+Website of an event landing page using NextJS, TailwindCSS and Typescript.
 
 - Components structure
 - Contact Form
