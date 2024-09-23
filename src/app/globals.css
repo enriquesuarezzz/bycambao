@@ -27,17 +27,17 @@ section::-webkit-scrollbar {
   transition: all 0.3s ease-in-out;
 }
 
-/* global.css */
-
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('/images/by_cambao_background.avif'); /* Cambia esto por tu ruta de imagen */
+}
+.image-background {
+  background-image: url('/images/by_cambao_background.avif');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* o contain, dependiendo de cómo quieres ajustar la imagen */
-  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  background-size: cover;
+  background-attachment: fixed;
 }
