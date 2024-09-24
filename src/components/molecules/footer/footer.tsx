@@ -109,7 +109,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               {/* cookies */}
               <Link
-                href="/cookies"
+                href="/politica-de-cookies"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
                 <MontserratText text="Cookies" fontSize="14px" />
