@@ -14,7 +14,7 @@ export default function Footer() {
       title: 'Contacto',
     },
     {
-      title: 'Equipo',
+      title: 'Tickets',
     },
   ]
   return (

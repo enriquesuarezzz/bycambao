@@ -18,7 +18,7 @@ export default function Home() {
         muted
         playsInline
         className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
-        src="/videos/video_backgroun.mov"
+        src="/videos/video_background.mov"
       />
 
       {/* Contenido encima del video */}
@@ -33,13 +33,13 @@ export default function Home() {
         />
       </header>
 
-      <div className="relative z-10 flex flex-col items-center justify-center gap-10">
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 pt-10">
         <Link href={'/bycambao'}>
           <MontserratText
             text="BYCAMBAO"
             tag="h1"
             style="bold"
-            fontSize="46px"
+            fontSize="42px"
             className="flex transform text-orange transition-transform duration-300 hover:scale-105"
           />
         </Link>
@@ -48,7 +48,7 @@ export default function Home() {
             text="TICKETS"
             tag="h1"
             style="bold"
-            fontSize="46px"
+            fontSize="42px"
             className="flex transform text-orange transition-transform duration-300 hover:scale-105"
           />
         </Link>
