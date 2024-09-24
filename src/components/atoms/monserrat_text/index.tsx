@@ -11,7 +11,15 @@ export interface MontserratTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '13px' | '14px' | '16px' | '18px' | '46px'
+  fontSize?:
+    | '13px'
+    | '14px'
+    | '16px'
+    | '18px'
+    | '20px'
+    | '28px'
+    | '40px'
+    | '42px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
@@ -42,11 +50,17 @@ export const MontserratText = forwardRef<
         case '14px':
           return 'text-[12px] md:text-[14px]'
         case '16px':
-          return 'text-[16px]'
+          return 'text-[14px] md:text-[16px]'
         case '18px':
           return 'text-[18px]'
-        case '46px':
-          return 'text-[32px] md:text-[46px]'
+        case '20px':
+          return 'text-[16px] md:text-[20px]'
+        case '28px':
+          return 'text-[24px] md:text-[28px]'
+        case '40px':
+          return 'text-[24px] md:text-[32px] lg:text-[40px]'
+        case '42px':
+          return 'text-[32px] md:text-[42px]'
       }
     }
 

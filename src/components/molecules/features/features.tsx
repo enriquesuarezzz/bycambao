@@ -39,7 +39,7 @@ export default function Features() {
           <div className="px-4 py-4 md:px-6">
             <MontserratText
               text={title}
-              fontSize="46px"
+              fontSize="28px"
               className="pt-1 text-center md:pt-4"
             />
             <MontserratText

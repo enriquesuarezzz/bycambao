@@ -18,7 +18,7 @@ export default function Home() {
         <Features />
         <MontserratText
           text="The first byCambao"
-          fontSize="46px"
+          fontSize="40px"
           className="pt-10 md:pt-20"
         />
       </SectionLayout>

@@ -8,8 +8,8 @@ export default function Header() {
         <MontserratText
           text="Una razón para volver"
           tag="h1"
-          style="bold"
-          fontSize="46px"
+          style="semibold"
+          fontSize="40px"
           className="pb-10 md:pb-14"
         />
       </div>
@@ -29,9 +29,7 @@ export default function Header() {
         <div className="max-w-[700px] text-center">
           <MontserratText
             text="Lanzarote alberga de los lugares más bonitos del planeta, y pecamos de dar todo a los turistas, conejeros, estamos aquí para hacerles disfrutar de la fiesta canaria con la cultura inquieta de los jóvenes."
-            tag="h1"
-            style="bold"
-            fontSize="18px"
+            fontSize="16px"
             className="ml-0 lg:ml-40"
           />
         </div>
