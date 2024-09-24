@@ -27,7 +27,7 @@ export default function Contacto() {
             <div className="flex flex-col items-center justify-center pt-2 md:pt-10">
               <MontserratText
                 text="Contacto"
-                fontSize="46px"
+                fontSize="42px"
                 style="bold"
                 className="text-bold pt-6 text-orange md:pt-0"
               />
