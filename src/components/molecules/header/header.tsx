@@ -1,12 +1,11 @@
-import { Dancing_ScriptText } from '@/components/atoms/dancing_ScriptText'
-
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import Image from 'next/image'
 export default function Header() {
   return (
     <header className="flex flex-col">
       {/* header title */}
       <div className="flex items-center justify-center">
-        <Dancing_ScriptText
+        <MontserratText
           text="Una razón para volver"
           tag="h1"
           style="bold"
@@ -28,11 +27,11 @@ export default function Header() {
         </div>
         {/* header description */}
         <div className="max-w-[700px] text-center">
-          <Dancing_ScriptText
+          <MontserratText
             text="Lanzarote alberga de los lugares más bonitos del planeta, y pecamos de dar todo a los turistas, conejeros, estamos aquí para hacerles disfrutar de la fiesta canaria con la cultura inquieta de los jóvenes."
             tag="h1"
             style="bold"
-            fontSize="20px"
+            fontSize="18px"
             className="ml-0 lg:ml-40"
           />
         </div>

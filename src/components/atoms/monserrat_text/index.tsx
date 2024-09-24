@@ -1,30 +1,30 @@
 'use client'
-import { Sacramento } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { forwardRef, useEffect, useRef } from 'react'
 
-export const sacramento = Sacramento({
+export const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['300', '400', '600', '700'],
 })
 
-export interface SacramentoTextProps {
+export interface MontserratTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '23px'
+  fontSize?: '13px' | '14px' | '16px' | '18px' | '46px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
 
-export const SacramentoText = forwardRef<
+export const MontserratText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
-  SacramentoTextProps
+  MontserratTextProps
 >(
   ({
     text,
     tag = 'p',
     style = 'regular',
-    fontSize = '23px',
+    fontSize = '16px',
     className = 'text-black',
     leading = 'normal',
   }) => {
@@ -37,8 +37,16 @@ export const SacramentoText = forwardRef<
 
     function getSize() {
       switch (fontSize) {
-        case '23px':
-          return 'text-[23px]'
+        case '13px':
+          return 'text-[11px] md:text-[13px]'
+        case '14px':
+          return 'text-[12px] md:text-[14px]'
+        case '16px':
+          return 'text-[16px]'
+        case '18px':
+          return 'text-[18px]'
+        case '46px':
+          return 'text-[32px] md:text-[46px]'
       }
     }
 
@@ -72,7 +80,7 @@ export const SacramentoText = forwardRef<
       }
     }
 
-    const globalStyle = `${sacramento.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    const globalStyle = `${montserrat.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {
@@ -125,4 +133,4 @@ export const SacramentoText = forwardRef<
   },
 )
 
-SacramentoText.displayName = 'SacramentoText'
+MontserratText.displayName = 'MontserratText'

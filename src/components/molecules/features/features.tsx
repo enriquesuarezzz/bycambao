@@ -1,5 +1,4 @@
-import { Dancing_ScriptText } from '@/components/atoms/dancing_ScriptText'
-import { OnestText } from '@/components/atoms/onest_text'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import Image from 'next/image'
 export default function Features() {
   const features = [
@@ -38,12 +37,12 @@ export default function Features() {
             className="h-auto w-full rounded-2xl object-cover px-8 pt-6 md:px-10 md:pt-8"
           />
           <div className="px-4 py-4 md:px-6">
-            <Dancing_ScriptText
+            <MontserratText
               text={title}
               fontSize="46px"
               className="pt-1 text-center md:pt-4"
             />
-            <OnestText
+            <MontserratText
               text={description}
               fontSize="16px"
               className="px-4 pb-6 pt-4 text-center md:px-6"

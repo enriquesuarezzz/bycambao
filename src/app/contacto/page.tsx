@@ -1,4 +1,4 @@
-import { Dancing_ScriptText } from '@/components/atoms/dancing_ScriptText'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import ContactForm from '@/components/molecules/contact_form/contact_form'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -25,15 +25,15 @@ export default function Contacto() {
         <div className="flex flex-col items-center justify-center">
           <div className="mx-auto max-w-8xl px-4 xl:px-10">
             <div className="flex flex-col items-center justify-center pt-2 md:pt-10">
-              <Dancing_ScriptText
+              <MontserratText
                 text="Contacto"
                 fontSize="46px"
                 style="bold"
                 className="text-bold pt-6 text-orange md:pt-0"
               />
-              <Dancing_ScriptText
+              <MontserratText
                 text="¿Tienes alguna consulta? Ponte en contacto con nosotros"
-                fontSize="20px"
+                fontSize="18px"
                 className="text-bold pb-6 pt-2 text-center md:pb-10 md:pt-6"
               />
             </div>
