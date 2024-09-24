@@ -1,4 +1,4 @@
-import { Dancing_ScriptText } from '@/components/atoms/dancing_ScriptText'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import SectionLayout from '@/components/atoms/section_layout/section_layout'
 import Features from '@/components/molecules/features/features'
 import FirstByCambao from '@/components/molecules/firstByCambao/firstByCambao'
@@ -16,7 +16,7 @@ export default function Home() {
       <SectionLayout>
         <Header />
         <Features />
-        <Dancing_ScriptText
+        <MontserratText
           text="The first byCambao"
           fontSize="46px"
           className="pt-10 md:pt-20"

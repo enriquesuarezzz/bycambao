@@ -3,7 +3,7 @@ import { FC, useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { sendEmail } from '@/utils/send-email'
 import Input from '../input/input'
-import { OnestText } from '@/components/atoms/onest_text'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 
 // Define the structure of form data
 export type FormData = {
@@ -155,7 +155,7 @@ const ContactForm: FC = () => {
               })}
             />
             <label htmlFor="checkbox">
-              <OnestText
+              <MontserratText
                 text={`Acepto el procesamiento de mis datos personales de acuerdo con nuestra <a href='/privacy-policy' class='underline hover:text-orange'> Política de Privacidad </a>`}
                 fontSize="14px"
                 className=""
@@ -181,7 +181,7 @@ const ContactForm: FC = () => {
         {/* Display success message after successfully sending email */}
         {sendSuccess && (
           <div className="mt-4">
-            <OnestText
+            <MontserratText
               text="Gracias por enviar tu consulta. Te responderemos lo antes posible."
               className="text-green-500"
             />

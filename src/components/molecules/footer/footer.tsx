@@ -1,4 +1,4 @@
-import { OnestText } from '@/components/atoms/onest_text'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import { IArrow } from '@/components/atoms/svg/IArrow'
 import { IInstagram } from '@/components/atoms/svg/IInstagram'
 import Image from 'next/image'
@@ -43,7 +43,7 @@ export default function Footer() {
                   className="flex transform transition-transform duration-300 hover:scale-105"
                   key={index}
                 >
-                  <OnestText text={link.title} fontSize="16px" />
+                  <MontserratText text={link.title} fontSize="16px" />
                   <IArrow />
                 </Link>
               ))}
@@ -66,14 +66,14 @@ export default function Footer() {
                 href="tel:+34611345567"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="611 34 55 67" fontSize="14px" />
+                <MontserratText text="611 34 55 67" fontSize="14px" />
               </Link>
               {/* Mail */}
               <Link
                 href="mailto:bycambao@gmail.com"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="bycambao@gmail.com" fontSize="14px" />
+                <MontserratText text="bycambao@gmail.com" fontSize="14px" />
               </Link>
             </div>
             <div className="flex flex-col">
@@ -98,7 +98,7 @@ export default function Footer() {
                       className="flex transform transition-transform duration-300 hover:scale-105"
                       key={index}
                     >
-                      <OnestText text={link.title} fontSize="16px" />
+                      <MontserratText text={link.title} fontSize="16px" />
                       <IArrow />
                     </Link>
                   ))}
@@ -112,14 +112,14 @@ export default function Footer() {
                 href="/cookies"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="Cookies" fontSize="14px" />
+                <MontserratText text="Cookies" fontSize="14px" />
               </Link>
               {/* legal advise */}
               <Link
                 href="/aviso-legal"
                 className="flex transform underline transition-transform duration-300 hover:scale-105"
               >
-                <OnestText text="Aviso Legal" fontSize="14px" />
+                <MontserratText text="Aviso Legal" fontSize="14px" />
               </Link>
             </div>
           </div>
@@ -130,19 +130,19 @@ export default function Footer() {
 
           {/* Text below the line */}
           <div className="flex flex-col items-center justify-center gap-2 text-sm text-gray-600">
-            <OnestText
+            <MontserratText
               text="© 2024 byCambao. Todos los derechos reservados."
               fontSize="13px"
             />
             <div className="flex gap-1">
-              <OnestText text="Created by " fontSize="13px" />
+              <MontserratText text="Created by " fontSize="13px" />
               <Link
                 href="https://www.instagram.com/enriquesuarezzz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform underline transition-transform duration-300 hover:scale-110"
               >
-                <OnestText text="Enrique Suarez" fontSize="13px" />
+                <MontserratText text="Enrique Suarez" fontSize="13px" />
               </Link>
             </div>
           </div>

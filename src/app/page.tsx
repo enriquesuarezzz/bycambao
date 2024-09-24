@@ -1,4 +1,4 @@
-import { OnestText } from '@/components/atoms/onest_text'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -35,7 +35,7 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-10">
         <Link href={'/bycambao'}>
-          <OnestText
+          <MontserratText
             text="BYCAMBAO"
             tag="h1"
             style="bold"
@@ -44,7 +44,7 @@ export default function Home() {
           />
         </Link>
         <Link href={'/tickets'}>
-          <OnestText
+          <MontserratText
             text="TICKETS"
             tag="h1"
             style="bold"

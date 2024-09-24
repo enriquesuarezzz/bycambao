@@ -1,5 +1,4 @@
-import { OnestText } from '@/components/atoms/onest_text'
-import { SacramentoText } from '@/components/atoms/sacramento'
+import { MontserratText } from '@/components/atoms/monserrat_text'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -16,7 +15,7 @@ export default function Navbar() {
       />
       <div className="mt-4 flex gap-3 md:gap-10">
         <Link href={'/'}>
-          <OnestText
+          <MontserratText
             text="Inicio"
             tag="h1"
             style="bold"
@@ -25,7 +24,7 @@ export default function Navbar() {
           />
         </Link>
         <Link href={'/'}>
-          <OnestText
+          <MontserratText
             text="Equipo"
             tag="h1"
             style="bold"
@@ -34,7 +33,7 @@ export default function Navbar() {
           />
         </Link>
         <Link href={'/'}>
-          <OnestText
+          <MontserratText
             text="Contacto"
             tag="h1"
             style="bold"
@@ -44,11 +43,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="mt-4 hidden gap-4 md:flex">
-        <SacramentoText
+        <MontserratText
           text='"Una razón para volver"'
           tag="h1"
           style="bold"
-          fontSize="23px"
+          fontSize="18px"
           className=""
         />
       </div>
