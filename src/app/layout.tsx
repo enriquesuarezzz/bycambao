@@ -1,10 +1,7 @@
-'use client'
-
 import localFont from 'next/font/local'
 import './globals.css'
-import Navbar from '@/components/molecules/navbar/navbar'
-import Footer from '@/components/molecules/footer/footer'
-import { usePathname } from 'next/navigation'
+import CookiesPopup from '@/components/molecules/cookies_pop_up/cookies_pop_up'
+import ClientLayout from '@/components/molecules/client_layout/client_layout'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -22,8 +19,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const pathname = usePathname()
-
   return (
     <html lang="es">
       <body
@@ -31,12 +26,11 @@ export default function RootLayout({
       >
         {children}
         {/* avoid layout on homepage */}
-        {pathname !== '/' && (
-          <>
-            <Navbar />
-            <Footer />
-          </>
-        )}
+
+        <>
+          <CookiesPopup />
+          <ClientLayout>{children}</ClientLayout>
+        </>
       </body>
     </html>
   )
