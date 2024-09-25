@@ -24,9 +24,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} image-background antialiased`}
       >
-        {children}
-        {/* avoid layout on homepage */}
-
         <>
           <CookiesPopup />
           <ClientLayout>{children}</ClientLayout>
