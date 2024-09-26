@@ -23,7 +23,7 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
             id={props.id}
             name={props.name}
             value={props.value}
-            className="font-satoshi-regular focus: peer h-20 w-full bg-transparent pt-2 text-base placeholder-transparent focus:outline-none"
+            className="focus: peer h-20 w-full bg-transparent pt-2 text-base placeholder-transparent focus:outline-none"
             placeholder=""
             onChange={props.onChange}
             {...props.register} // Spread additional props for integration with form libraries
@@ -35,7 +35,7 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
             type={type}
             name={props.name}
             value={props.value}
-            className="font-satoshi-regular focus: peer h-10 w-full rounded-none bg-transparent pt-2 text-base placeholder-transparent focus:outline-none"
+            className="focus: peer w-full rounded-none bg-transparent pt-2 text-base placeholder-transparent focus:outline-none"
             placeholder=""
             onChange={props.onChange}
             {...props.register} // Spread additional props for integration with form libraries
@@ -43,7 +43,7 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
         )}
         <label
           htmlFor={props.id}
-          className="font-satoshi-regular peer-focus:font-satoshi-regular peer-placeholder-shown:font-satoshi-regular pointer-events-none absolute -top-4 left-0 bg-transparent text-base transition-all peer-placeholder-shown:-top-0 peer-placeholder-shown:text-xl peer-focus:-top-4 peer-focus:text-base"
+          className="peer-focus: peer-placeholder-shown: pointer-events-none absolute -top-4 left-0 bg-transparent text-base transition-all peer-placeholder-shown:-top-0 peer-placeholder-shown:text-xl peer-focus:-top-4 peer-focus:text-base"
         >
           {props.label}
         </label>

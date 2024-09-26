@@ -144,12 +144,12 @@ const ContactForm: FC = () => {
           </div>
         </div>
         {/* Checkbox for Privacy Policy */}
-        <div className="mb-4 flex flex-col items-start">
-          <div className="flex items-center">
+        <div className="flex flex-col pt-4">
+          <div className="flex">
             <Input
               type="checkbox"
               id="checkbox"
-              className="mr-2"
+              className="mr-2 h-4 w-4"
               {...register('checkbox', {
                 required: 'Debes aceptar la política de privacidad',
               })}
@@ -170,7 +170,7 @@ const ContactForm: FC = () => {
         <div className="mt-6 grid">
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-orange px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+            className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-orange px-4 py-3 text-sm font-semibold text-white disabled:opacity-50"
             disabled={isSending}
           >
             {isSending ? 'Enviando...' : 'Enviar'}
