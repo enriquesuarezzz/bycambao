@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'byCambao | Contacto',
-  description: 'Pagina de contacto de byCambao',
+  description: 'byCambao contact page',
 }
 
 export default function Contacto() {
