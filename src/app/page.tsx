@@ -6,6 +6,19 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'byCambao | Inicio',
   description: 'byCambao home page',
+  openGraph: {
+    title: 'byCambao',
+    description: 'Una razón para volver',
+    url: 'https://www.bycambao.com',
+    siteName: 'byCambao',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_IMAGES_PATH}images/contact_header.avif`,
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 }
 
 export default function Home() {
@@ -18,7 +31,7 @@ export default function Home() {
         muted
         playsInline
         className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
-        src="/videos/video_background.mov"
+        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}videos/video_background.mov`}
       />
 
       {/* Contenido encima del video */}
