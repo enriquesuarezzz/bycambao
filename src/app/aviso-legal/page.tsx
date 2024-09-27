@@ -73,7 +73,7 @@ export default function LegalAdvicePage() {
     <main>
       {/* Background image */}
       <Image
-        src={'/images/contact_header.avif'}
+        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/contact_header.avif`}
         alt="laser depilation image"
         layout="responsive"
         width={1384}
