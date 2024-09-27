@@ -11,7 +11,7 @@ export default function CookiesPage() {
   return (
     <main>
       <Image
-        src={'/images/contact_header.avif'}
+        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/contact_header.avif`}
         alt="bycambao party image"
         layout="responsive"
         width={1384}
