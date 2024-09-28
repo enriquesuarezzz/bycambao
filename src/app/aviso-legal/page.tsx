@@ -75,10 +75,10 @@ export default function LegalAdvicePage() {
       <Image
         src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/contact_header.avif`}
         alt="laser depilation image"
-        layout="responsive"
         width={1384}
         height={420}
         className="max-h-[420px] w-full object-cover"
+        priority
         unoptimized
       />
       {/* Content */}
