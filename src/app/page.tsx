@@ -42,6 +42,7 @@ export default function Home() {
           width={250}
           height={250}
           unoptimized
+          priority
           className="lg:h-[200px] lg:w-[300px]"
         />
       </header>
