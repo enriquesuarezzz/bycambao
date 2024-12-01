@@ -31,13 +31,13 @@ export default function Home() {
         muted
         playsInline
         className="absolute left-0 top-0 -z-10 h-full w-full object-cover"
-        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}videos/video_background.mov`}
+        src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/beige_logo.mov`}
       />
 
       {/* Contenido encima del video */}
       <header className="relative z-10 flex flex-col gap-4 pb-10">
         <Image
-          src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/beige_logo.avif`}
+          src={`${process.env.NEXT_PUBLIC_IMAGES_PATH}images/logo.avif`}
           alt="byCambao party image"
           width={250}
           height={250}
