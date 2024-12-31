@@ -1,4 +1,4 @@
-# byCambao Landing Page Websit
+# byCambao Landing Page Website
 
 Website of an event landing page using NextJS, TailwindCSS and Typescript.
 
